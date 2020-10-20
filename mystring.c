@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "mystring.h"
+
 int mystrlen(char *s)
 {
 	int l = 0;
@@ -12,8 +14,8 @@ int mystrlen(char *s)
 	}
 	return l;
 }
-char *mystrcpy(char *dest, char *source)
-{
+char *mystrcpy(char *dest, char *source){}
+/*{
 	int i=0;
 	while(source[i]){
 		dest[i]=source[i];
@@ -23,8 +25,9 @@ char *mystrcpy(char *dest, char *source)
 		dest[i]=0;
 	return dest;
 }
-char *mystrncpy(char *dest, char *source, int n)
-{
+*/
+char *mystrncpy(char *dest, char *source, int n){}
+/*{
 	int i=0;
 	while(source[i]){
 		if(i>=n)
@@ -36,6 +39,7 @@ char *mystrncpy(char *dest, char *source, int n)
 		dest[i]=0;
 	return dest;
 }
+*/
 char *mystrcat(char *dest, char *source)
 {
 }
