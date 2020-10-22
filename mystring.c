@@ -14,34 +14,40 @@ int mystrlen(char *s)
 	}
 	return l;
 }
-char *mystrcpy(char *dest, char *source){}
-/*{
-	int i=0;
-	while(source[i]){
-		dest[i]=source[i];
+
+char *mystrcpy(char *dest, char *source)
+{
+	int i = 0;
+	while (source[i])
+	{
+		dest[i] = source[i];
 		i++;
 	}
-	if(source[i]==0)
-		dest[i]=0;
+	if (source[i] == 0)
+		dest[i] = 0;
 	return dest;
 }
-*/
-char *mystrncpy(char *dest, char *source, int n){}
-/*{
-	int i=0;
-	while(source[i]){
-		if(i>=n)
+
+char *mystrncpy(char *dest, char *source, int n)
+{
+	int i = 0;
+	while (source[i])
+	{
+		if (i >= n)
 			return dest;
-		dest[i]=source[i];
+		dest[i] = source[i];
 		i++;
 	}
-	if(source[i]==0 && i<n)
-		dest[i]=0;
+	if (source[i] == 0 && i < n)
+		dest[i] = 0;
 	return dest;
 }
-*/
+
 char *mystrcat(char *dest, char *source)
 {
+	dest += mystrlen(dest);
+	if (dest - 1 == 0)
+		dest -= 1;
 }
 char *mystrncat(char *dest, char *source, int n)
 {
